@@ -1,0 +1,6 @@
+Final Dataset.csv
+incident_similarity.pkl
+
+__pycache__/
+*.pyc
+.DS_Store

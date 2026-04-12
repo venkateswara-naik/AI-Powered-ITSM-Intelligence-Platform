@@ -1,0 +1,16 @@
+DOCUMENT ID: KB-T-409
+TOPIC: Microsoft Teams Meeting Invite Failures
+AUTHOR: Enterprise Unified Communications Team
+
+ISSUE: Users report an inability to generate or send meeting invites through the Microsoft Teams desktop client. The Teams add-in may also disappear from Microsoft Outlook.
+
+ROOT CAUSE: Typically caused by a desynchronization between the local Teams AppData cache and the Exchange Calendar Add-in COM registry keys.
+
+RESOLUTION STEPS:
+1. Close Microsoft Teams and Microsoft Outlook completely. Ensure no background processes are running in Task Manager.
+2. Press Windows Key + R, type '%appdata%\Microsoft\Teams', and hit Enter.
+3. Delete all files and folders within this directory to clear the local cache.
+4. Open Microsoft Outlook. Navigate to File > Options > Add-ins.
+5. In the Manage drop-down at the bottom, select 'COM Add-ins' and click Go.
+6. Check the box for 'Microsoft Teams Meeting Add-in for Microsoft Office' and click OK.
+7. Restart the computer and launch Teams to verify sync restoration.
